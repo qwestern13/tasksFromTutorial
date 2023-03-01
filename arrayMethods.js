@@ -49,3 +49,11 @@ usersMapped = [
 
 console.log( usersMapped[0].id ); // 1
 console.log( usersMapped[0].fullName ); // Вася Пупкин
+
+function shuffle(arr) {
+    arr.sort(() => Math.random() - 0.5);
+}
+
+let arr1 = [1, 2, 3];
+shuffle(arr1);
+alert(arr1);

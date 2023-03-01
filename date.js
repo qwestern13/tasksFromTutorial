@@ -32,3 +32,8 @@ let date2 = new Date(2015, 0, 2);
 console.log(getDateAgo(date2, 1)); // 1, (1 Jan 2015)
 console.log(getDateAgo(date2, 2)); // 31, (31 Dec 2014)
 console.log(getDateAgo(date2, 365)); // 2, (2 Jan 2014)
+
+function getLastDayOfMonth(year, month) {
+    let date = new Date(year, month + 1, 0);
+    return date.getDate();
+}
